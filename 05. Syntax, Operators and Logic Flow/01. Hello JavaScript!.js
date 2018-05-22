@@ -1,0 +1,6 @@
+function helloJS(name) {
+    console.log('Hello, ' + name + ', I am JavaScript!');
+}
+
+helloJS('Pesho');
+helloJS('Bill Gates');
