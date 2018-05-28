@@ -1,10 +1,7 @@
 function modifyAverage(num) {
     let numAsStr = '' + num;
-    while (numAvg(numAsStr) <= 5) {
-        numAsStr += 9;
-    }
 
-    console.log(numAsStr);
+    let addNine = (n)=>n+'9';
 
     function numAvg(str) {
         let sum = 0;
@@ -13,6 +10,12 @@ function modifyAverage(num) {
         }
         return sum / str.length;
     }
+
+    while (numAvg(numAsStr) <= 5) {
+        numAsStr = addNine(numAsStr);
+    }
+
+    console.log(numAsStr);
 }
 
 modifyAverage(101);
