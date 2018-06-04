@@ -1,4 +1,8 @@
-let startWith = (str, start) => new RegExp('^'+start).test(str);
+// version 1
+//let startWith = (str, start) => new RegExp('^'+start).test(str);
+
+// version 2
+let startWith = (str, start) => start === str.slice(0, start.length);
 
 console.log(startWith('How have you been?', 'how'));
 console.log();
