@@ -1,8 +1,8 @@
 let secretData = (arr) => arr.join('\n')
-    .replace(/(\*[A-Z][A-Za-z]*)(?=\s|$|\.)|\+[\d-]{10}(?=\s|$|\.)|[_|\!][A-Za-z0-9]+(?=\s|$|\.)/g,a=>'|'.repeat(a.length));
-        //.replace(/\*[A-Z][A-Za-z]*(?=\s|$|\.)/g,a=>'|'.repeat(a.length)) // name pattern
-        //.replace(/\+[\d-]{10}(?=\s|$|\.)/g,a=>'|'.repeat(a.length)) // phone pattern
-        //.replace(/[_|\!][A-Za-z0-9]+(?=\s|$|\.)/g,a=>'|'.repeat(a.length)); // ID and base pattern
+    .replace(/(\*[A-Z][A-Za-z]*)(?=\s|$)|\+[\d-]{10}(?=\s|$)|[_|\!][A-Za-z0-9]+(?=\s|$)/g,a=>'|'.repeat(a.length));
+        //.replace(/\*[A-Z][A-Za-z]*(?=\s|$)/g,a=>'|'.repeat(a.length)) // name pattern
+        //.replace(/\+[\d-]{10}(?=\s|$)/g,a=>'|'.repeat(a.length)) // phone pattern
+        //.replace(/[_|\!][A-Za-z0-9]+(?=\s|$)/g,a=>'|'.repeat(a.length)); // ID and base pattern
 
 
 console.log(secretData([
