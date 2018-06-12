@@ -7,9 +7,9 @@ function travelPlans(arr) {
     let clumsyCounter = 0;
 
     for (let i = 0; i < arr.length; i++) {
-        [profesion, goldOffert] = arr[i].split(' : ');
+        [professions , goldOffert] = arr[i].split(' : ');
         goldOffert = +goldOffert;
-        if (specialized.includes(profesion)){
+        if (specialized.includes(professions)){
             if(goldOffert < 200)
                 continue;
 
@@ -19,9 +19,9 @@ function travelPlans(arr) {
 
             if(specCounter%2 ===0)
                 totalGold += 200;
-        } else  if (average.includes(profesion)) {
+        } else  if (average.includes(professions)) {
             totalGold += goldOffert;
-        } else  if (clumsy.includes(profesion)) {
+        } else  if (clumsy.includes(professions)) {
             clumsyCounter++;
             if (clumsyCounter%2 ===0){
                 goldOffert *= 0.95;
@@ -45,5 +45,4 @@ function travelPlans(arr) {
 
 console.log(travelPlans(["Programming : 500", "Driving : 243", "Singing : 100", "Cooking : 199"]));
 console.log();
-console.log(travelPlans(["Programming : 500", "Driving : 243.55", "Acting : 200", "Singing : 100", "Cooking : 199", "Hardware maintenance : 800", "Gardening : 700", "Programming : 500"]
-));
+console.log(travelPlans(["Programming : 500", "Driving : 243.55", "Acting : 200", "Singing : 100", "Cooking : 199", "Hardware maintenance : 800", "Gardening : 700", "Programming : 500"]));

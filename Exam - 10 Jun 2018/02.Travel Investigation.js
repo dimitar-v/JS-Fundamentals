@@ -50,13 +50,13 @@ function travelInvestigation(arr) {
     return result;
 }
 
-//console.log(travelInvestigation(["bulgariatour@, minkatrans@, koftipochivkaltd",
-//    "@, ",
-//    "Mincho e KoftiPochivkaLTD Tip 123  ve MinkaTrans BulgariaTour",
-//    "dqdo mraz some text but is KoftiPochivkaLTD MinkaTrans",
-//    "someone continues as no "]
-//));
-//console.log();
+console.log(travelInvestigation(["bulgariatour@, minkatrans@, koftipochivkaltd",
+    "@, ",
+    "Mincho e KoftiPochivkaLTD Tip 123  ve MinkaTrans BulgariaTour",
+    "dqdo mraz some text but is KoftiPochivkaLTD MinkaTrans",
+    "someone continues as no "]
+));
+console.log();
 console.log(travelInvestigation(["bulgariatour@, minkatrans@, koftipochivkaltd",
     "@, ",
     "Mincho  e KoftiPockivkaLTD Tip 123  ve MinkaTrans BulgariaTour",
