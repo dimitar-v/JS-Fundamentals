@@ -39,13 +39,13 @@ function solve(arr) {
     }
 }
 
-//console.log(solve(["Bulgaria > Sofia > 500",
-//    "Bulgaria > Sopot > 800",
-//    "France > Paris > 2000",
-//    "Albania > Tirana > 1000",
-//    "Bulgaria > Sofia > 200" ]
-//));
-
+console.log(solve(["Bulgaria > Sofia > 500",
+    "Bulgaria > Sopot > 800",
+    "France > Paris > 2000",
+    "Albania > Tirana > 1000",
+    "Bulgaria > Sofia > 200" ]
+));
+console.log();
 console.log(solve([
     'Bulgaria > Sofia > 25000',
     'aaa > Sofia > 1',
